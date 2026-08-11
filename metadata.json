@@ -1,0 +1,6 @@
+{
+  "name": "Google Forms",
+  "description": "Full-featured Google Forms clone with form creation, custom themes, quiz grading, logic branching, respondent submission, analytics & charts, and AI form generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
