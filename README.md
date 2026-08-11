@@ -1,96 +1,122 @@
-# Google Forms Clone
+<div align="center">
 
-A full-featured Google Forms clone built with React, TypeScript, and Tailwind CSS. Create forms, collect responses, analyze results, and generate forms using AI — all in the browser.
+# 📋 Google Forms Clone
+
+### A full-featured form builder powered by React, TypeScript & Gemini AI
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+
+<br/>
+
+> Create forms, collect responses, analyze results, and generate forms using AI — all in the browser. No database required.
+
+<br/>
+
+</div>
 
 ---
 
-## Features
+## ✨ Features
 
-### Form Management
-- Create forms from blank, templates, or AI prompt
-- Dashboard with grid and list view
-- Search, filter by category, sort by date / alphabetical / most responses
-- Favorite, duplicate, and soft-delete forms
-- Trash view with restore and permanent delete
-- Bulk select — duplicate or delete multiple forms at once
+<table>
+<tr>
+<td width="50%">
 
-### Form Editor
-- 14 question types — Short Answer, Paragraph, Multiple Choice, Checkboxes, Dropdown, Linear Scale, Rating, Date, Time, Date & Time, File Upload, NPS, Multiple Choice Grid, Checkbox Grid
-- Drag-and-drop question reordering
-- Add sections with inline title and description editing
-- Logic branching — jump to a section based on answer
-- Image attachment per question
-- Response validation rules (email, URL, min/max length, contains)
-- "Other" option for Multiple Choice and Checkboxes
-- Quiz mode — set point values and correct answers per question
-- `Ctrl+Enter` to add a new question, `Ctrl+Z` / `Ctrl+Y` for undo/redo
-- Auto-save indicator in the navbar
+### 🗂️ Form Management
+- Dashboard with **grid and list view**
+- Search, filter by category, sort by date / name / responses
+- **Favorite**, duplicate, soft-delete forms
+- **Trash view** — restore or permanently delete
+- **Bulk select** — delete or duplicate multiple forms
 
-### Form Respondent View
-- Progress bar for multi-section forms
-- Passcode-protected access
-- Schedule open and close dates
-- Max submissions limit
-- One-response-per-device enforcement
-- Quiz score display + per-question answer feedback with explanations
+</td>
+<td width="50%">
 
-### Reports & Analytics
-- Summary charts — Pie for Multiple Choice, Bar for Checkboxes and Ratings
-- NPS breakdown — Detractors / Passives / Promoters chart + NPS score
-- Score trend chart for quiz forms
-- Browse individual submissions
-- Data table with search filter
-- Export all responses to CSV
+### ✏️ Form Editor
+- **14 question types** — Short Answer, Paragraph, Multiple Choice, Checkboxes, Dropdown, Linear Scale, Rating, Date/Time, File Upload, NPS, Grids & more
+- **Drag-and-drop** question reordering
+- **Logic branching** — jump to sections based on answers
+- **Image attachment** per question
+- **Response validation** rules
+- **Undo / Redo** — up to 50 states
 
-### AI Form Generator
-- Describe a form in plain text and Gemini AI builds it instantly
-- Generates questions, options, theme colors, and quiz answers automatically
-- Powered by Google Gemini (`gemini-2.0-flash`)
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### Excel / CSV Import
+### 📊 Reports & Analytics
+- **Summary charts** — Pie, Bar, Line charts
+- **NPS breakdown** — Detractors / Passives / Promoters
+- **Score trend chart** for quiz forms
+- Browse **individual submissions**
+- **Data table** with search filter
+- **Export to CSV** in one click
+
+</td>
+<td width="50%">
+
+### 🤖 AI Form Generator
+- Describe a form in plain text
+- **Gemini AI** builds questions, options, theme & quiz answers instantly
+- 6 quick-start prompt suggestions included
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📁 Excel / CSV Import
 - Upload any `.xlsx`, `.xls`, or `.csv` file
-- Column headers become form questions automatically
-- Auto-detects question type from header name and sample values
-- Fully editable before generating the form
+- **Auto-detects question type** from column headers & sample values
+- Fully editable field mapping before generating
 
-### Theme & Sharing
-- 10 preset color palettes + custom header images
-- Font style selector
-- Share via link, QR code, HTML embed, or email invite
+</td>
+<td width="50%">
 
-### Dark Mode
-- Full dark mode across every view and modal
-- Toggle with the ☾/☀ button in the navbar
-- Preference saved to localStorage
+### 🎨 Theme & Sharing
+- **10 color palettes** + custom header images
+- Share via **link**, **QR code**, **HTML embed**, or **email**
+- **Dark mode** — full coverage, persisted to localStorage
+
+</td>
+</tr>
+</table>
 
 ---
 
-## Tech Stack
+## 🖥️ Tech Stack
 
-| Layer | Technology |
+| Category | Technology |
 |---|---|
-| Frontend | React 19, TypeScript, Tailwind CSS v4 |
+| Frontend | React 19, TypeScript 5.8, Tailwind CSS v4 |
 | Backend | Express 4 + Vite dev middleware |
 | AI | Google Gemini API (`@google/genai`) |
 | Charts | Recharts |
 | Icons | Lucide React |
-| Drag & Drop | @dnd-kit/core, @dnd-kit/sortable |
+| Drag & Drop | @dnd-kit/core + @dnd-kit/sortable |
 | Excel Parsing | SheetJS (xlsx) |
 | QR Codes | qrcode |
 | Build | Vite 6 + esbuild |
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+
+
+- **Node.js** 18 or higher
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/google-forms.git
+git clone https://github.com/HiteshPatil2610/google-forms.git
+
+# Move into the project folder
 cd google-forms
 
 # Install dependencies
@@ -105,11 +131,10 @@ Create a `.env.local` file in the project root:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-Get a free API key at [Google AI Studio](https://aistudio.google.com/app/apikey).
+> Get a free key at [Google AI Studio](https://aistudio.google.com/app/apikey).
+> The app works fully without it — only the AI Form Generator requires the key.
 
-> The app works fully without the API key — only the AI Form Generator feature requires it.
-
-### Run Locally
+### Run the App
 
 ```bash
 npm run dev
@@ -117,7 +142,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### Build for Production
+### Production Build
 
 ```bash
 npm run build
@@ -126,62 +151,76 @@ npm start
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 google-forms/
-├── server.ts                  # Express server + Gemini AI endpoint
+│
+├── server.ts                        # Express server + Gemini AI endpoint
+│
 ├── src/
-│   ├── main.tsx               # React entry point
-│   ├── App.tsx                # Root component — state, routing, handlers
-│   ├── types.ts               # All TypeScript interfaces and types
-│   ├── index.css              # Tailwind imports + global styles
+│   ├── main.tsx                     # React entry point
+│   ├── App.tsx                      # Root — state, routing, all handlers
+│   ├── types.ts                     # TypeScript interfaces & types
+│   ├── index.css                    # Tailwind + global styles
+│   │
 │   ├── data/
-│   │   └── initialData.ts     # Seed forms and responses
+│   │   └── initialData.ts           # Seed forms and sample responses
+│   │
 │   ├── utils/
-│   │   └── storage.ts         # localStorage read/write helpers
+│   │   └── storage.ts               # localStorage helpers
+│   │
 │   └── components/
-│       ├── Navbar.tsx              # Sticky header, tabs, undo/redo, dark mode
-│       ├── FormManager.tsx         # Dashboard — template gallery, forms grid/list
-│       ├── FormEditor.tsx          # Question builder with all 14 question types
-│       ├── FormRespondent.tsx      # Respondent/preview view
-│       ├── FormReport.tsx          # Analytics — charts, table, individual responses
-│       ├── FormSettingsView.tsx    # Quiz, scheduling, access control settings
-│       ├── ThemeCustomizer.tsx     # Color palette, header image, font style drawer
-│       ├── SendModal.tsx           # Share via link, QR code, embed, email
+│       ├── Navbar.tsx               # Header, tabs, undo/redo, dark mode
+│       ├── FormManager.tsx          # Dashboard — gallery, grid, list, trash
+│       ├── FormEditor.tsx           # Question builder (14 types, DnD)
+│       ├── FormRespondent.tsx       # Respondent / preview view
+│       ├── FormReport.tsx           # Charts, table, CSV export
+│       ├── FormSettingsView.tsx     # Quiz, scheduling, access settings
+│       ├── ThemeCustomizer.tsx      # Colors, header image, font style
+│       ├── SendModal.tsx            # Link, QR code, embed, email share
 │       ├── AiFormGeneratorModal.tsx # Gemini AI form generation
-│       └── ExcelImportModal.tsx    # Excel/CSV to form converter
-├── CHANGELOG.md               # History of all changes made to the project
-├── .env.example               # Environment variable reference
+│       └── ExcelImportModal.tsx     # Excel / CSV → form converter
+│
+├── CHANGELOG.md                     # History of all changes
+├── .env.example                     # Environment variable reference
 └── package.json
 ```
 
 ---
 
-## Data Storage
+## 💾 Data Storage
 
-All form data and responses are stored in the browser's **localStorage** — no database required. On first load, three example forms with sample responses are seeded automatically.
+All data is stored in the browser's **localStorage** — no database needed.
 
 | Key | Contents |
 |---|---|
 | `gforms_clone_forms_v1` | All forms |
 | `gforms_clone_responses_v1` | All responses |
-| `gforms_clone_submitted_v1` | Submitted form IDs (for limitOneResponse) |
-| `gforms_clone_last_viewed_v1` | Last-viewed response counts (for new badges) |
+| `gforms_clone_submitted_v1` | Per-device submitted form IDs |
+| `gforms_clone_last_viewed_v1` | Last-viewed response counts |
 | `gforms_clone_dark_mode_v1` | Dark mode preference |
 
 ---
 
-## Keyboard Shortcuts
+## ⌨️ Keyboard Shortcuts
 
 | Shortcut | Action |
 |---|---|
-| `Ctrl+Enter` | Add a new question after the active one |
-| `Ctrl+Z` | Undo last form change |
-| `Ctrl+Y` / `Ctrl+Shift+Z` | Redo |
+| `Ctrl + Enter` | Add a new question after the active one |
+| `Ctrl + Z` | Undo last form change |
+| `Ctrl + Y` or `Ctrl + Shift + Z` | Redo |
 
 ---
 
-## License
+## 📝 License
 
-MIT
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Hitesh Patil](https://github.com/HiteshPatil2610)
+
+</div>
